@@ -146,3 +146,13 @@ class Electrodes:
                     new_points.append(new_point)
     return np.vstack([self.positions_3d, np.array(new_points)])
     
+if __name__ == "__main__":
+    import pandas as pd
+    electrodes = Electrodes()
+    print(electrodes.channel_names, electrodes.positions_3d)
+    df = pd.DataFrame(electrodes.positions_3d, columns=['X','Y','Z'])
+    df.set_index(electrodes.channel_names, inplace=True)
+    # .T.to_latex()
+    print(df)
+    print(df.iloc[:16])
+    print(df.iloc[16:])
