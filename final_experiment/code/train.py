@@ -2,7 +2,7 @@ import torch
 import time
 import numpy as np
 from util import get_split_indices
-from test import test_epoch
+from test_torch import test_epoch
 from torch_geometric.data import  DataLoader
 from torch.utils.tensorboard import SummaryWriter
 from metrics import accuracy_metric, f1_metric, precision_metric, recall_metric, roc_metric

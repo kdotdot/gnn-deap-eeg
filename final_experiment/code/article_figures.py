@@ -13,7 +13,7 @@ from models.LogisticRegression import LogisticRegression
 # from decimals import *
 
 from train import main as train_main
-from test import main as test_main
+from test_torch import main as test_main
 from util import get_split_indices
 
 parser = argparse.ArgumentParser(description='Process eeg emotions. http://www.eecs.qmul.ac.uk/mmv/datasets/deap/')

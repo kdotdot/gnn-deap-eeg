@@ -16,7 +16,7 @@ from models.GRU import GRU
 from models.GCNGRU import GCNGRU
 from models.GatedGraphConvGRU import GatedGraphConvGRU
 from train import main as train_main
-from test import main as test_main
+from test_torch import main as test_main
 from util import get_split_indices
 
 from torchviz import make_dot
